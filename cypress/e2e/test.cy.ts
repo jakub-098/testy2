@@ -1,2 +1,11 @@
 // put first tests here
-describe("open site")
+describe("basic tests", () => {
+
+  it("open homepage",() => {
+    cy.visit("/");
+  })
+  
+  it("shows album",() => {
+    cy.visit("/");
+  })
+})
