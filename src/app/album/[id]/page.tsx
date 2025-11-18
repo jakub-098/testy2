@@ -31,7 +31,7 @@ export default function AlbumDetail({ params }: { params: Promise<{ id: string }
             <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
                 <div>
                     {album.name} by{" "}
-                    <Link href={`/author/${album.author_id}`}>{album.author_name}</Link>
+                    <Link data-cy="author-button" href={`/author/${album.author_id}`}>{album.author_name}</Link>
                 </div>
                 <div>
                     <table className="table">

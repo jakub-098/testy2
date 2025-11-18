@@ -17,8 +17,8 @@ export default function Home() {
 
                 <div className="grid grid-cols-2 gap-4">
                     {albums?.map((album) => (
-                        <div key={album.id} className="card w-64 bg-base-100 shadow-sm">
-                            <div className="card-body">
+                        <div key={album.id}  className="card w-64 bg-base-100 shadow-sm ">
+                            <div className="card-body" data-cy="album-card">
                                 <span className="badge badge-xs badge-warning">Pop</span>
                                 <h2 className="text-3xl font-bold">{album.name}</h2>
 
@@ -34,6 +34,7 @@ export default function Home() {
                                     <Link
                                         className="btn btn-primary btn-block"
                                         href={`/album/${album.id}`}
+                                        data-cy="album-button"
                                     >
                                         Detail
                                     </Link>
